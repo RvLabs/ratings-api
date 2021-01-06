@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: RatingsAPI-DockerBuild
 
 # Controls when the action will run. 
 on:
@@ -45,5 +45,6 @@ jobs:
         # uses: docker/build-push-action@0db984c1826869dcd0740ff26ff75ff543238fd9
         uses: docker/build-push-action@v2.2.1
         with:
+          context: .
           push: true
           tags: latest
